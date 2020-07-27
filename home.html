@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Page</title>
+</head>
+<body>
+    <h2 style="text-align: center">{{.PageTitle}}</h2>
+
+    <ul>
+    {{ range .Data}}
+        <li><b>{{.User}}</b> : {{.Email}} <input name="status" type="text"></li>
+    {{ end }}
+
+    </ul>
+</body>
+</html>

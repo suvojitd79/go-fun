@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package dummy;
+
+message User{
+  string name = 1;
+  string email = 2;
+  uint32 age = 3;
+}
+
+message Users {
+  repeated User users = 1;
+}
